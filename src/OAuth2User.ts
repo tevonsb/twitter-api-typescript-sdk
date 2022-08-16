@@ -115,6 +115,15 @@ export class OAuth2User implements AuthClient {
     this.#options = options;
   }
 
+  
+  
+  /**
+   * Set the internal token
+   */
+  setToken(token: Token): void {
+   this.token = token; 
+  }
+  
   /**
    * Refresh the access token
    */
